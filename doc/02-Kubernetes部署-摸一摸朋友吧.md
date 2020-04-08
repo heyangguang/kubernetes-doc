@@ -269,11 +269,6 @@ mode: ipvs  # kube-proxy 模式
 >
 > imageRepository:  docker.io/heyangguang123
 >
-> 如果docker.io也不能下载，请查看本篇文章的网盘地址，我会分享一个镜像的压缩包。下载以后直接导入即可！
->
-> imageRepository:  docker.io/heyangguang123
->
-> docker load < google_k8s_1.16.2.tar
 
 **使用配置文件，初始化Kubernetes集群：**
 
@@ -435,7 +430,8 @@ k8s-worker-2   NotReady   <none>   50s     v1.16.2
 **到这里的，会发现我们现在集群的状态都是NotReady状态，不要惊慌！基本操作！这是因为还没有安装网络查件导致的，接下来我们部署Flannel网络插件（Master节点上执行）：**
 
 ```bash
-# 下载网络插件部署的yaml，需要翻墙，如果不能翻墙的，请去本章的github下载。
+# 下载网络插件部署的yaml，需要翻墙，如果不能翻墙的，请点击下面的github下载。
+# https://github.com/heyangguang/kubernetes-doc/blob/master/yaml/02-install-k8s/kube-flannel.yml
 [root@k8s-master-1 ~]# wget https://raw.githubusercontent.com/coreos/flannel/2140ac876ef134e0ed5af15c65e414cf26827915/Documentation/kube-flannel.yml
 
 # 因为有节点是多网卡，所以需要在资源清单文件中指定内网网卡
