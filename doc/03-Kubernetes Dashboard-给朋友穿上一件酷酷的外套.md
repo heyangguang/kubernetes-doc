@@ -13,7 +13,7 @@ v1.16.2版本的集群需要安装最新的 2.0+ 版本的Dshboard：
 ```bash
 # 推荐使用下面的这种方式部署
 # 下载这个yaml需要科学上网，如果不能下载，请访问我的github👇
-# 
+# https://github.com/heyangguang/kubernetes-doc/blob/master/yaml/03-install-k8s-dashboard/recommended.yaml
 [root@k8s-master-1 ~]# wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta5/aio/deploy/recommended.yaml
 
 # 修改Service为NodePort类型，让我们部署以后可以访问
