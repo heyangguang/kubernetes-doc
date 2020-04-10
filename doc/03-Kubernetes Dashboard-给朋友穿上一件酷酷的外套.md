@@ -157,7 +157,4 @@ systemctl start docker
 
 
 
-
-
-
-
+**本篇文章，到这里就结束了，回顾一下，这篇文章我们主要是学习了Kubernetes Dashboard的部署和Kubernetes环境重置清理。下一篇文章：Kubernetes Pod原理。**
