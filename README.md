@@ -14,3 +14,5 @@ https://segmentfault.com/blog/hyk8s
 - 01-Kubernetes介绍-让我们做个朋友吧👬
 - 02-Kubernetes部署-摸一摸朋友吧
 - 03-Kubernetes Dashboard-给朋友穿上一件酷酷的外套
+- 04-Kubernetes Pod原理
+
